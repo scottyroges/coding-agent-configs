@@ -56,7 +56,7 @@ Apply these rules strictly:
 - It only applies to a specific part of the codebase (frontend, tests, API layer)
 - Example: testing conventions that only matter in `src/components/`
 
-**→ docs/ (architecture or patterns file)** if:
+**→ .personal/docs/ (architecture or patterns file)** if:
 - It needs detailed examples, code blocks, or extended explanation
 - It's reference material, not a rule
 - CLAUDE.md should have a one-liner pointing to this doc
@@ -91,7 +91,7 @@ Output a structured report:
 - [one-liner rule]
 - [one-liner rule]
 
-### Add to docs/architecture/[file].md
+### Add to .personal/docs/architecture/[file].md
 [Brief description of what to document and where]
 
 ### Suggest Hook

@@ -32,14 +32,14 @@ Start broad, then go deep where it matters.
 
 **For a general onboard:**
 - Read the project root: package.json/Cargo.toml/pyproject.toml, CLAUDE.md, README
-- Read docs/INDEX.md and docs/stack.md if they exist
+- Read .personal/docs/INDEX.md and .personal/docs/stack.md if they exist
 - LS the top-level source directories to understand the shape
 - Identify the major modules/packages/domains
 - Read entry points (main, index, app, server files)
 - Skim key directories one level deep to understand organization
 
 **For a specific feature or area:**
-- Start from docs/INDEX.md and docs/architecture/ if they exist
+- Start from .personal/docs/INDEX.md and .personal/docs/architecture/ if they exist
 - Grep for the relevant domain terms to find where the code lives
 - Read the primary files in that area (services, controllers, models)
 - Trace the data flow: entry point → processing → storage/output
@@ -66,7 +66,7 @@ What conventions does this codebase follow?]
 [Where execution starts, how requests flow through the system]
 
 ## Stack
-See docs/stack.md. 
+See .personal/docs/stack.md. 
 If missing check [Languages, frameworks, databases, external services. Only what's actually used, not what's in package.json but unused.]
 ```
 

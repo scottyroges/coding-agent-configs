@@ -78,7 +78,7 @@ Rules:
 - Do explain non-obvious decisions ("used a queue instead of direct processing because...")
 - Do mention breaking changes, migration steps, or deployment notes if applicable
 - Keep the whole thing under 200 words for most PRs
-- If the changes implement a plan from `docs/plans/active/`, link to it in the Why section.
+- If the changes implement a plan from `.personal/docs/plans/active/`, link to it in the Why section.
 
 ### 4. Output
 Present the commit message or PR description. If invoked for a branch, also include a suggested PR title (type: short summary format).

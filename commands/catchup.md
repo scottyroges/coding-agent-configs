@@ -2,7 +2,7 @@ Show current project state to orient at session start.
 
 Do the following and present a brief summary:
 
-1. Read `docs/plans/active/` — list any active plans with their current status
+1. Read `.personal/docs/plans/active/` — list any active plans with their current status
 2. Run `git status` — show uncommitted changes
 3. Run `git log --oneline -5` — show recent commits
 4. Run `git branch --show-current` — show what branch you're on

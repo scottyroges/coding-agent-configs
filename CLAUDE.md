@@ -6,7 +6,7 @@
 - Run typechecks after code changes.
 
 ## Documentation
-- Every project uses the docs/INDEX.md pattern. Consult it before exploring blindly.
+- Every project uses the .personal/docs/INDEX.md pattern. Consult it before exploring blindly.
 - Update docs as part of finishing work, not as a separate step.
 
 ## Code Changes

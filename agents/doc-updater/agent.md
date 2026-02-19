@@ -38,9 +38,9 @@ If asked for a **dry run**, skip to Step 5 and return only what you *would* chan
 
 ### 2. Understand Existing Docs
 
-Read `docs/INDEX.md` to understand the documentation structure. Then read only the docs that are potentially affected by the changes. Don't read everything — be surgical.
+Read `.personal/docs/INDEX.md` to understand the documentation structure. Then read only the docs that are potentially affected by the changes. Don't read everything — be surgical.
 
-If `docs/INDEX.md` doesn't exist, create a minimal one covering only what the current changes introduce. Don't try to document the entire project in one pass.
+If `.personal/docs/INDEX.md` doesn't exist, create a minimal one covering only what the current changes introduce. Don't try to document the entire project in one pass.
 
 ### 3. Decide What to Update
 
@@ -52,7 +52,7 @@ For each change, decide:
 Err on the side of *not* documenting. Implementation details don't belong in docs. Document concepts, flows, relationships, and decisions — not code.
 
 ### 4. Make the Changes
-Only create or edit files under `docs/`. If changes suggest updates elsewhere (root README.md, CLAUDE.md, code comments), note them in your summary but don't make the edits. 
+Only create or edit files under `.personal/docs/`. If changes suggest updates elsewhere (root README.md, CLAUDE.md, code comments), note them in your summary but don't make the edits. 
 
 When updating docs:
 - Match the tone and style of the existing file
@@ -63,9 +63,9 @@ When updating docs:
 When creating new docs:
 - Place them in the appropriate directory (architecture/, decisions/, etc.)
 - Follow the conventions of existing docs in that directory
-- Update `docs/INDEX.md` to include the new file
+- Update `.personal/docs/INDEX.md` to include the new file
 
-When creating decision records (docs/decisions/):
+When creating decision records (.personal/docs/decisions/):
 - Use the next number in sequence
 - Include: Status, Date, Context, Decision, Consequences
 - Only create ADRs for significant architectural choices, not routine changes

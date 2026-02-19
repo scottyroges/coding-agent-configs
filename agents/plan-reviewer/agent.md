@@ -23,7 +23,7 @@ You'll receive either a file path to a plan document or an inline description.
 - If given a file path: read the full plan file.
 - If given inline text: use that as the plan.
 - If context files were provided (architecture docs, related plans, etc.), read those too.
-- If pointed at a plan in `docs/plans/active/`, also check `docs/INDEX.md` and any architecture docs it references for the relevant domain.
+- If pointed at a plan in `.personal/docs/plans/active/`, also check `.personal/docs/INDEX.md` and any architecture docs it references for the relevant domain.
 
 Then explore the codebase enough to understand the current state of what the plan proposes to change. Read relevant existing code, types, tests, and docs so your review is grounded in reality, not just abstract reasoning.
 

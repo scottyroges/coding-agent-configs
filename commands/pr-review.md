@@ -9,7 +9,7 @@ Usage:
 
 Options:
   /pr-review --spec "description"     — provide what the changes should accomplish
-  /pr-review --spec docs/plans/active/auth-refactor.md — reference a plan file as the spec
+  /pr-review --spec .personal/docs/plans/active/auth-refactor.md — reference a plan file as the spec
 
 Dispatch this to the code-reviewer agent. Pass the scope and spec if provided. If no spec is given, the agent will infer intent from the code and commit messages.
 

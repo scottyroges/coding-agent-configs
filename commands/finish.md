@@ -12,7 +12,7 @@ Steps:
 
 3. **Stage doc updates** — Stage any new or modified doc files the doc-updater created.
 
-4. **Check active plans** — If changes relate to an active plan in `docs/plans/active/`, remind the user: "This looks related to [plan]. Want to update its status before committing?"
+4. **Check active plans** — If changes relate to an active plan in `.personal/docs/plans/active/`, remind the user: "This looks related to [plan]. Want to update its status before committing?"
 
 5. **Generate commit message** — Dispatch to the pr-writer agent for all staged changes. If the user provided a description in quotes, pass it as context.
   - Options: commit as-is, edit the message, stage more files, or abort
