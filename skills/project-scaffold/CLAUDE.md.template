@@ -1,0 +1,17 @@
+# {Project Name}
+
+{One-line description}
+
+## Commands
+
+- **Build:** `{TODO}`
+- **Test:** `{TODO}`
+- **Run:** `{TODO}`
+- **Lint:** `{TODO}`
+
+## Documentation
+
+For project documentation, see `docs/INDEX.md`.
+
+## Architecture
+{TODO: Add 3-5 key architectural rules once established}

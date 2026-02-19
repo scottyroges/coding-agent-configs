@@ -1,0 +1,19 @@
+# Documentation Index
+
+## When to Consult
+
+- **Tech stack & dependencies:** docs/stack.md
+- **Architecture decisions (and why):** docs/decisions/
+- **System architecture & mental models:** docs/architecture/
+- **Active work plans:** docs/plans/active/
+- **Completed work plans:** docs/plans/completed/
+
+## Quick Reference
+- **Tech stack & dependencies:** docs/stack.md
+- **Current roadmap & priorities:** docs/roadmap.md (when created)
+
+## Deep Dives
+- **Architecture decisions (and why):** docs/decisions/
+- **System architecture & mental models:** docs/architecture/
+- **Active work plans:** docs/plans/active/
+- **Completed work plans:** docs/plans/completed/
