@@ -62,7 +62,11 @@ printf "${DIM}Target: %s${RESET}\n\n" "$CLAUDE"
 
 # --- CLAUDE.md ---
 printf "${CYAN}CLAUDE.md${RESET}\n"
-if ask "Symlink CLAUDE.md → ~/.claude/CLAUDE.md?"; then
+src="$REPO/CLAUDE.md"
+dest="$CLAUDE/CLAUDE.md"
+if [ -L "$dest" ] && [ "$(readlink "$dest")" = "$src" ]; then
+  printf "  ${DIM}already linked, skipping${RESET}\n"
+elif ask "Symlink CLAUDE.md → ~/.claude/CLAUDE.md?"; then
   link_item "$REPO/CLAUDE.md" "$CLAUDE/CLAUDE.md"
 fi
 printf "\n"
@@ -73,8 +77,12 @@ if [ -d "$REPO/agents" ]; then
   for agent_dir in "$REPO/agents"/*/; do
     [ -d "$agent_dir" ] || continue
     name=$(basename "$agent_dir")
+    src="$agent_dir"
+    dest="$CLAUDE/agents/$name"
     printf "  %s\n" "$name"
-    if ask "Symlink agents/$name → ~/.claude/agents/$name?"; then
+    if [ -L "$dest" ] && [ "$(readlink "$dest")" = "$src" ]; then
+      printf "    ${DIM}already linked, skipping${RESET}\n"
+    elif ask "Symlink agents/$name → ~/.claude/agents/$name?"; then
       link_item "$agent_dir" "$CLAUDE/agents/$name"
     fi
   done
@@ -87,8 +95,12 @@ if [ -d "$REPO/commands" ]; then
   for cmd_file in "$REPO/commands"/*.md; do
     [ -f "$cmd_file" ] || continue
     name=$(basename "$cmd_file")
+    src="$cmd_file"
+    dest="$CLAUDE/commands/$name"
     printf "  %s\n" "$name"
-    if ask "Symlink commands/$name → ~/.claude/commands/$name?"; then
+    if [ -L "$dest" ] && [ "$(readlink "$dest")" = "$src" ]; then
+      printf "    ${DIM}already linked, skipping${RESET}\n"
+    elif ask "Symlink commands/$name → ~/.claude/commands/$name?"; then
       link_item "$cmd_file" "$CLAUDE/commands/$name"
     fi
   done
@@ -101,8 +113,12 @@ if [ -d "$REPO/skills" ]; then
   for skill_dir in "$REPO/skills"/*/; do
     [ -d "$skill_dir" ] || continue
     name=$(basename "$skill_dir")
+    src="$skill_dir"
+    dest="$CLAUDE/skills/$name"
     printf "  %s\n" "$name"
-    if ask "Symlink skills/$name → ~/.claude/skills/$name?"; then
+    if [ -L "$dest" ] && [ "$(readlink "$dest")" = "$src" ]; then
+      printf "    ${DIM}already linked, skipping${RESET}\n"
+    elif ask "Symlink skills/$name → ~/.claude/skills/$name?"; then
       link_item "$skill_dir" "$CLAUDE/skills/$name"
     fi
   done
